@@ -2,20 +2,25 @@
 	{
 		"age":"1",
 		"id":"netflix-mockup",
-		"imageUrl":"",
+		"imageUrl":"images/netflix_main.png",
 		"smallImg":"",
 		"name":"Mobile Netflix Application Mockup, April 2012",
-		"blurb":"",
-		"body":""
+		"blurb":"My idea for a mobile Netflix UI",
+		"body":["I am a fan of Netflix who was disappointed with their mobile apps at the time",
+		"Inspired by Art Deco Theaters from the 1920s",
+		"For more on this mockup check out my <a href='http://martinesjeff.deviantart.com/gallery/36572232' target='_blank'>Deviant Art</a>"]
 	},
 	{
 		"age":"2",
 		"id":"sync-scope",
-		"imageUrl":"",
+		"imageUrl":"images/sync_main.png",
 		"smallImg":"",
 		"name":"Multi-Platform Horoscope/Gossip Application, Synacor, Inc",
 		"blurb":"",
-		"body":""
+		"body":["Developed between June 18 and August 24, 2012 for Synacor, Inc.",
+		"I was responsible for the UI, UX, and Front-End programming",
+		"Built with HTML5, CSS3, & JQuery",
+		"Shared code base, device agnositic, responsive"]
 	},
 	{
 		"age":"3",
@@ -23,7 +28,7 @@
 		"imageUrl":"images/grupr_main.png",
 		"smallImg":"",
 		"name":"Grüpr, Foundations of Mobile Design(RIT) Fall 2012",
-		"blurb":"",
+		"blurb":"Grüpr is the best way to spontaneously organize a meet-up. Grüpr is quick, easy, and painless.",
 		"body":["Team Project for Foundations of Mobile Design Class",
 		"Written in HTML5, CSS3, and Javascript",
 		"I was mainly responsible for the CSS and icon design.",

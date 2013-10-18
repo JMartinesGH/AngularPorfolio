@@ -1,0 +1,47 @@
+
+#portfolio{ 
+	font-family: "Helvetica";
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.explanation{
+	float:left;
+	font-family: "Helvetica";
+	display: inline;
+}
+
+.portfolioTitle{
+	font-family: "Helvetica";
+	font-size: 175%;
+	font-weight: 100;
+	float: left;
+	width: 100%;
+	margin: 1% 0% 1% 0%;
+	border-bottom: 1px solid #ccc;
+	color: #39f;
+}
+
+/*Roc Brewing Co*/
+
+.portfolioBody{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+.portfolioBody .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.portfolioBody .explanation p{
+	margin-top: 10%;
+}
+
+.portfolioImg{
+	width: 35%;
+	float:left;
+}

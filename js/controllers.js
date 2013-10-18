@@ -6,5 +6,5 @@ function workCtrl($scope, $http){
  	});
 	
 	$scope.hello = "Hello, Buttface!";
-	$scope.orderProp = 'age';
+	$scope.orderProp = '-age';
 }
