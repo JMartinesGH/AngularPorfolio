@@ -5,6 +5,6 @@ function workCtrl($scope, $http){
     	$scope.works = data;
  	});
 	
-	$scope.hello = "Hello, World!";
+	$scope.hello = "Hello, Buttface!";
 	$scope.orderProp = 'age';
 }

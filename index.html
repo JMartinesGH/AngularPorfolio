@@ -1,12 +1,20 @@
 <html ng-app>
 <head>
+	<meta charset="utf-8">
 	<title>Angular Portfolio</title>
 	<script type="text/javascript" src="js/angular/angular.js"></script>
-	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
 </head>
 <body ng-controller="workCtrl">
-	<div ng-repeat="work in works">
-		<h3>{{work.name}}</h3>
-	</div>
+	<p ng-bind="hello"></p>
+	<div id="portfolio">	
+		<div ng-repeat="work in works | orderBy:orderProp">
+			<h2 class="portfolioTitle">{{work.name}}</h2>
+			<div class="workImg"><img src="{{work.imageUrl}}" width="10%"></div>
+			<div class="explanation">
+				<p ng-repeat="para in work.body" ng-bind-html-unsafe="para"><span></span></p>
+			</div>
+		</div>
+	</div>		
 </body>
 </html>
