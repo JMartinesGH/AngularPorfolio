@@ -1,0 +1,12 @@
+<html ng-app>
+<head>
+	<title>Angular Portfolio</title>
+	<script type="text/javascript" src="js/angular/angular.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body ng-controller="workCtrl">
+	<div ng-repeat="work in works">
+		<h3>{{work.name}}</h3>
+	</div>
+</body>
+</html>

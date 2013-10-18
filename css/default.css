@@ -1,0 +1,1144 @@
+@charset "UTF-8";
+
+/* CSS RESET http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body {line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/*end reset*/
+
+/*
+	Website: jeffmartines.com
+	Created by: Jeff Martines;
+	created: 8/30/12;
+	updated: 7/15/13;
+*/
+
+
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('../fonts/Calluna_Sans/CallunaSansRegular-webfont.eot');
+    src: url('../fonts/Calluna_Sans/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Calluna_Sans/CallunaSansRegular-webfont.woff') format('woff'),
+         url('../fonts/Calluna_Sans/CallunaSansRegular-webfont.ttf') format('truetype'),
+         url('../fonts/Calluna_Sans/CallunaSansRegular-webfont.svg#CallunaSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo300Regular';
+    src: url('../fonts/museo_300/Museo300-Regular-webfont.eot');
+    src: url('../fonts/museo_300/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo_300/Museo300-Regular-webfont.woff') format('woff'),
+         url('../fonts/museo_300/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo_300/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* background is GPlay from subtlepatterns.com/gplay/ */
+html{
+	overflow-y: auto;
+	overflow-x: auto;
+	background-color: #FFFFFF;
+	background: fixed;
+	font-size: medium;
+	font-family: "Helvetica","Arial", "sans serif";
+	background-image: url(../images/gplaypattern.png);
+}
+
+body{
+ height:100%;
+ width: 100%;
+}
+
+header{
+	top: 0;
+	width: 100%;
+	height: 50px;	
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	z-index: 1;
+}
+
+article{
+
+}
+
+#trueTop{
+	top: 0;
+	position: absolute;
+}
+
+/*New single bar navigation (7/13)*/
+nav{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	font-family: Helvetica, sans-serif;
+	color: #39f;
+	height: 50px;
+	/*remove when scroll() added*/
+	-webkit-box-shadow: 0px 15px 25px -2px #cc ;
+	-moz-box-shadow: 0px 15px 25px -2px #ccc ;
+	box-shadow: 0px -15px 25px -2px #ccc;
+}
+
+/*class to be added using scroll()*/
+.scrolling{
+	-webkit-box-shadow: 0px 7px 5px -3px #cc ;
+	-moz-box-shadow: 0px 7px 5px -3px #ccc ;
+	box-shadow: 0px 7px 5px -3px #ccc ;
+}
+
+/*navigation links*/
+nav a{
+	color: #39f;
+}
+nav a:visited{
+	text-decoration: none;
+	color: #39f;
+}
+nav a:hover{
+	text-shadow: 2px 2px #ddd;
+}
+/*logo*/
+nav img{
+	height: 50px;
+	margin-left:10px;
+}
+
+nav ul {
+	float: right;
+	padding: 0 20px;
+	list-style:none;
+	position:relative;
+	display: inline-table;
+}
+
+nav ul:after{
+	clear: both;
+	display: block;
+}
+
+nav ul ul{
+	display: none;
+	width: 95px;
+	padding: 0;
+	margin-left: -21px;
+	/*margin-top: 10px;*/
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+/*only displays sub ul for hovered li*/
+nav ul li:hover > ul {
+		display: block;
+}
+
+nav ul li {
+	float:left;
+	padding: 15px 0px 0px 40px;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+}
+
+nav ul ul li{
+	float: none;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+}
+
+nav ul ul li img{
+	margin: 0;
+}
+
+nav ul ul li a{
+	padding: 5px 5px;
+	position: relative;
+}
+
+nav ul ul li a:hover {
+
+}
+nav ul ul li a img{
+	height: 18px;
+	padding: 2px 5px 0px 0px;
+}
+
+/*end single bar navigation*/
+
+#newBody{
+	margin-top: 50px;
+	position: relative !important;
+	width: 100%;
+}
+
+#bodyContent{
+	/*font-family: "CallunaSansRegular";*/
+	background: rgba(255,255,255,0.7);
+	/*width: 800px;*/
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+	min-height:530px;
+	
+}
+
+#aboutMe{
+	font-size: 125%;
+	/*width: 90%;*/
+	width:100%;
+	height: 300px;
+	/*background-color: #416f9d;*/
+	background-image: url(../images/tweed.png);
+	color: #fff;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+#aboutMeFit{
+	width: 800px;
+/*	padding-top: 20px;
+	padding-bottom: 20px;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*background-image: url(../images/tweed.png);*/
+}
+
+#aboutMeImg{
+	width: 30%;
+	padding-top: 25px;
+	color: #fff;
+	float: left;
+}
+
+#aboutMeImg img{
+	width: 100%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	/*border: 5px solid #fff;*/
+
+}
+
+#aboutMeText{
+	font-family: "CallunaSansRegular";
+	width: 65%;
+	float: right;
+	font-size: 90%;
+	margin-top: 20px;
+	line-height: 1.4;
+}
+/*resume section*/
+
+/*blog banner*/
+#blogBanner{
+	font-size: 125%;
+	/*width: 90%;*/
+	width:100%;
+	height: 300px;
+	/*background-color: #416f9d;*/
+	background-image: url(../images/tweed.png);
+	color: #fff;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+#blogBannerFit{
+	width: 800px;
+/*	padding-top: 20px;
+	padding-bottom: 20px;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*background-image: url(../images/tweed.png);*/
+}
+
+#bbannerText{
+	font-family: "CallunaSansRegular";
+	width: 100%;
+	float: right;
+	font-size: 90%;
+	margin-top: 20px;
+	line-height: 1.4;
+}
+/*end blog banner*/
+
+#resume{ 
+	/*width: 90%;*/
+	font-family: "Helvetica";
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#resume .resumeHeader{
+	font-size: 150%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	/*font-weight: bold;*/
+}
+
+#skills{
+	width: 30%;
+	float:left;
+}
+
+#resumeContent{
+	width:65%;
+	margin-left: 5%;
+	min-height: 500px;
+	float:right;
+}
+
+
+#primary ul{
+	list-style-type: circle;
+	margin-left:30px;
+}
+
+#primary li{
+	font-size: 90%;
+}
+
+
+#primary{
+	width:100%;
+	float: left;
+}
+
+#secondary{
+	width: 100%;
+	float:right;
+}
+
+#secondary ul{
+	list-style-type: circle;
+	margin-left:30px;
+}
+
+#secondary li{
+	font-size: 90%;
+}
+
+#resume p{
+	margin-left: 25px;
+}
+
+#resume .subHeader{
+	font-weight:bold;
+}
+
+#resume h4{
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#resume .experienceList{
+	margin-left: 42px;
+	margin-bottom: 15px;
+	list-style-type: circle;
+	font-size: 100%;
+}
+
+/*Portfolio CSS-only to be used for work page*/
+
+#highlight{
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/tweed.png);
+}
+
+#highlightContainer{
+	width: 800px;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+#hightlightImg{
+	width: 30%;
+	padding-top: 30px;
+	color: #fff;
+	float: left;
+}
+
+#hightlightImg img{
+	width: 100%;
+}
+
+#highlightText{
+	width: 65%;
+	color: #fff;
+	float: right;	
+	padding-top: 80px
+}
+
+#highlightTitle{
+	font-size: 200%;
+}
+
+#playStoreBadge{
+	width: 129px;
+	margin-left: 140px;
+	margin-right: auto;
+	padding-top: 60px;
+}
+
+#portfolio{ 
+	font-family: "Helvetica";
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.explanation{
+	float:left;
+	font-family: "CallunaSansRegular";
+	display: inline;
+}
+
+#horoscope{
+	margin: 2% 0% 0% 0%;
+}
+
+#horoscope .explanation{
+	width: 43%;
+	font-size: 150%;
+	font-weight: 100;
+	margin: 10% 0% 15% 0%;
+	float: left;
+
+}
+
+#horoscope .explanation p{
+	margin-bottom: 5%;
+}
+
+/*.explanation img{ width: 35%; align: left;}*/
+
+.scopeImg{
+	width:45%;
+	margin-right: 5%;
+	float:left;
+}
+
+.scopeImg2{
+	width:45%;
+	/*margin-left: 2%;*/
+	float:right;
+	padding-bottom: 40px;
+}
+
+.portfolioTitle{
+	font-family: "Helvetica";
+	font-size: 175%;
+	font-weight: 100;
+	float: left;
+	width: 100%;
+	margin: 1% 0% 1% 0%;
+}
+
+#netflix{
+	margin: 2% auto 0% auto;
+	float: left;
+}
+
+#netflix .explanation{
+	width: 31%;
+	font-size: 150%;
+	margin: 5% 1% 5% 1%;
+}
+
+#netflix .explanation p{
+	margin-bottom: 5%;
+}
+
+.netflixImg{
+	width: 33%;
+	float: left;
+}
+.netflixImg2{
+	width: 67%;
+	margin: 5% auto 1% auto;
+	float: left;
+}
+
+#deviantLink{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-family: "helvetica";
+	font-size: 125%;
+	margin-bottom: 20px;
+}
+
+#grupr{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+#grupr .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+#grupr .explanation p{
+	margin-top: 10%;
+}
+
+.gruprImg{
+	width: 35%;
+	float:left;
+}
+
+/*Fin*/
+#fin{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+#fin .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+#fin .explanation p{
+	margin-top: 10%;
+}
+
+.finImg{
+	width: 35%;
+	float:left;
+}
+
+/*Roc Brewing Co*/
+
+#rbc{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+#rbc .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+#rbc .explanation p{
+	margin-top: 10%;
+}
+
+.rbcImg{
+	width: 35%;
+	float:left;
+}
+
+/*footer stuff*/
+#footer{
+	width: 100%;
+	background-color: #fff;
+	bottom: 0;
+	height: 50px;
+	position: absolute;
+	border-top: 1px solid #ddd;
+}
+
+#footerContent{
+	width: 800px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	font-family: Helvetica, sans-serif;
+	color: #39f;
+	/*remove when scroll() added*/
+	-webkit-box-shadow: 0px 15px 25px -2px #cc ;
+	-moz-box-shadow: 0px 15px 25px -2px #ccc ;
+	box-shadow: 0px 15px 25px -2px #ccc;
+}
+
+#footerContent ul{
+	/*padding: 0 20px;*/
+	width: 100%;
+	list-style:none;
+	position:relative;
+	display: inline-table;
+}
+
+#footer ul:after{
+	clear: both;
+	display: block;
+}
+
+#footer ul li {
+	float:left;
+	padding: 15px 0px 0px 80px;
+}
+
+#footer ul li img{
+	height: 30px;
+}
+
+#footer ul li a {
+	display: block;
+	text-decoration: none;
+}
+
+#footer a:visited{
+	text-decoration: none;
+	color: #39f;
+}
+#footer a:hover{
+	text-shadow: 2px 2px #ddd;
+}
+
+/*Tablets(mainly iPads)*/
+@media screen and (max-width: 850px) {
+
+#highlightContainer{
+	width: 100%;
+}
+
+#resume{
+	width: 100%;
+}
+
+#portfolio{
+	width: 100%;
+}
+
+nav{
+	width: 100%;
+}
+
+#footerContent{
+	width: 100%;
+}
+
+#aboutMeFit{
+	width: 100%;
+}
+
+#blogBannerFit{
+	width: 100%;
+}
+
+}/*end tablets(mainly iPad)*/
+
+/*Nexus 7*/
+@media screen and (max-width: 800px) {
+
+#bodyContent{
+	width: 100%;
+}
+
+}
+
+@media screen and (max-width: 724px){
+
+#aboutMeFit{
+	width: 100%;
+
+}
+
+/*#aboutMe img{
+	width: 125px;
+	margin-left: 10px; 
+}
+
+#aboutMeText{
+	width: 75%;
+	margin: 0px 0px 0px -10px;
+	font-size: 75%;
+}*/
+
+#footer ul li {
+	float:left;
+	padding: 15px 0px 0px 60px;
+}
+
+#footer ul li img{
+	height: 30px;
+}
+
+}
+
+/*Once again for a more graceful response*/
+@media screen and (max-width: 610px) {
+
+#aboutMeImg{
+	width: 35%;
+	padding-top: 35px;
+}
+
+#aboutMeText{
+	width: 60%;
+	font-size: 80%;
+}
+
+#hightlightImg{
+	width: 40%;
+	padding-top: 30px;
+	color: #fff;
+	float: left;
+}
+
+#highlightText{
+	width: 55%;
+	color: #fff;
+	float: right;	
+	padding-top: 80px
+}
+
+#highlightTitle{
+	font-size: 235%;
+}
+
+#playStoreBadge{
+	width: 129px;
+	margin-left: 20%;
+	padding-top: 40px;
+}
+
+#resume{
+	width: 100%;
+}
+
+#resume .experienceList{
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+}
+
+#resume .resumeHeader{
+	margin-top: 0px;
+	text-align: center;
+}
+
+#resumeContent{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	min-height: 320px;
+	margin-top: 20px;
+}
+
+#skills{
+	width: 100%;
+	padding-bottom: 70px;
+}
+
+#skills .resumeHeader {
+	margin-bottom: 5px;
+	margin-top:5px;
+}
+
+#primary li{
+	margin-left: 40px;
+}
+
+#primary{
+	width: 50%;
+	float:left;
+}
+
+#secondary{
+	width:50%;
+	float:right;
+}
+
+#primary ul{
+	margin-left: 0px;
+}
+
+#netflix .explanation{
+	width: 100%;
+	text-align: center;
+	margin: 5% auto 5% auto;
+}
+
+.netflixImg {
+width: 50%;
+margin: 0% 25% 0% 25%;
+float: left;
+}
+
+.netflixImg2 {
+width: 100%;
+margin: 5% auto 1% auto;
+float: left;
+}
+
+#footer ul li {
+	float:left;
+	padding: 15px 0px 0px 40px;
+}
+
+#footer ul li img{
+	height: 30px;
+}
+
+}
+
+/*landscape mobile*/
+@media screen and (max-width: 610px) and (orientation:landscape){
+
+
+#newBody {
+	padding-top: 0px;
+}
+
+#bodyContent{
+	width: 100%;
+}
+
+footer{
+
+}
+
+.gruprImg {
+	width: 28%;
+	float: left;
+	margin: 0% 1% 0% 1%;
+}
+
+#grupr .explanation {
+	width: 65%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.finImg {
+	width: 28%;
+	float: left;
+	margin: 0% 1% 0% 1%;
+}
+
+#fin .explanation {
+	width: 65%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.rbcImg {
+	width: 28%;
+	float: left;
+	margin: 0% 1% 0% 1%;
+}
+
+#rbc .explanation {
+	width: 65%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.netflixImg {
+width: 75%;
+margin: 0% 12.5% 0% 12.5%;
+float: left;
+}
+
+.netflixImg2 {
+width: 100%;
+margin: 5% auto 1% auto;
+float: left;
+}
+
+.scopeImg {
+width: 90%;
+margin: 0% 5% 0% 5%;
+float: left;
+}
+
+#horoscope .explanation {
+width: 90%;
+font-size: 150%;
+font-weight: 100;
+margin: 10% 5% 0% 5%;
+}
+
+.scopeImg2 {
+width: 90%;
+margin: 0% 5% 0% 5%;
+
+}
+}
+
+/*Phones!*/
+@media screen and (max-width: 500px) {
+
+#aboutMe{
+	height: 250px;
+}
+
+#aboutMeImg{
+	width: 30%;
+	padding: 40px 0px 0px 5px;
+}
+
+#aboutMeText{
+	width: 65%;
+	font-size: 70%;
+}
+
+#highlight{
+	height: 200px;
+}
+
+#hightlightImg{
+	width: 35%;
+	padding-top: 15px;
+	padding-left: 10px;
+	color: #fff;
+	float: left;
+}
+
+#highlightText{
+	width: 60%;
+	color: #fff;
+	float: right;	
+	padding-top: 40px
+}
+
+#highlightTitle{
+	font-size: 125%;
+}
+
+#playStoreBadge{
+	margin-left: 20%;
+	padding-top: 40px;
+}
+
+nav ul li{
+	padding-left: 30px;
+	font-size: 90%;
+}
+
+nav ul ul li{
+	font-size: 75%;
+}
+
+#newBody {
+	padding-top: 0px;
+	/*z-index: 0;*/
+}
+
+#bodyContent{
+	width: 100%;
+	padding-top: 0px;
+
+}
+
+#resumeContent{
+	min-height: 320px;
+}
+
+footer{
+
+}
+
+.gruprImg {
+	width: 75%;
+	float: left;
+	margin: 0% 12.5% 0% 12.5%;
+}
+
+#grupr .explanation {
+	width: 90%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.finImg {
+	width: 75%;
+	float: left;
+	margin: 0% 12.5% 0% 12.5%;
+}
+
+#fin .explanation {
+	width: 90%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.rbcImg {
+	width: 75%;
+	float: left;
+	margin: 0% 12.5% 0% 12.5%;
+}
+
+#rbc .explanation {
+	width: 90%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+.netflixImg {
+width: 75%;
+margin: 0% 12.5% 0% 12.5%;
+float: left;
+}
+
+.netflixImg2 {
+width: 100%;
+margin: 5% auto 1% auto;
+float: left;
+}
+
+.scopeImg {
+width: 90%;
+margin: 0% 5% 0% 5%;
+float: left;
+}
+
+#horoscope .explanation {
+width: 90%;
+font-size: 150%;
+font-weight: 100;
+margin: 10% 5% 0% 5%;
+}
+
+.scopeImg2 {
+width: 90%;
+margin: 0% 5% 0% 5%;
+}
+
+#footer ul li {
+	float:left;
+	font-size: 80%;
+	/*padding: 15px 0px 0px 30px;*/
+}
+
+#footer ul li img{
+	height: 30px;
+}
+
+}
+
+@media screen and (max-width: 400px){
+
+#aboutMe{
+	height: 500px;
+}
+
+#aboutMeImg{
+	width: 95%%;
+	padding-top: 25px;
+}
+
+#aboutMeImg img{
+	width: 60%;
+	margin-left: 18%;
+}
+
+#aboutMeText{
+	width: 90%;
+	margin-right: 5%;
+}
+
+nav ul{
+	padding: 0;	
+}
+
+#hightlightImg{
+	width: 40%;
+	padding-top: 35px;
+	padding-left: 10px;
+	color: #fff;
+	float: left;
+}
+
+#highlightText{
+	width: 50%;
+	color: #fff;
+	float: right;	
+	padding-top: 40px
+}
+
+#playStoreBadge{
+	margin-left: 0;
+	padding-top: 20px;
+}
+
+#playStoreBadge img{
+	width: 135px;
+}
+
+#footerContent ul{
+	padding: 0;
+}
+
+#footer ul li {
+	float:left;
+	font-size: 75%;
+	/*padding: 15px 0px 0px 10px;*/
+	padding: 5% 0% 0% 8%;
+	margin-left: -1%;
+}
+
+#footer ul li img{
+	height: 30px;
+}
+
+}
+
+/*the worst mobile browsers*/
+@media screen and (max-width: 320px) {
+nav ul li{
+	padding-top: 15px;
+	padding-left: 18px;
+	font-size: 75%;
+}
+
+nav ul ul li{
+	font-size: 75%;
+}
+
+/*#aboutMe img{
+	width: 260px;
+	margin-left: 10%;
+}*/
+
+#footer ul li {
+	float:left;
+	font-size: 80%;
+	padding: 5% 0% 0% 6%;
+}
+
+#footer ul li img{
+	height: 30px;
+}
+
+}
+/*end mobile media query*/

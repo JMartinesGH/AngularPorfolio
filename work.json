@@ -1,0 +1,51 @@
+[
+	{
+		"age":"1",
+		"id":"netflix-mockup",
+		"imageUrl":"",
+		"smallImg":"",
+		"name":"Mobile Netflix Application Mockup, April 2012",
+		"blurb":"",
+		"body":""
+	},
+	{
+		"age":"2",
+		"id":"sync-scope",
+		"imageUrl":"",
+		"smallImg":"",
+		"name":"Multi-Platform Horoscope/Gossip Application, Synacor, Inc",
+		"blurb":"",
+		"body":""
+	},
+	{
+		"age":"3",
+		"id":"grupr-fmd",
+		"imageUrl":"",
+		"smallImg":"",
+		"name":"Grüpr, Foundations of Mobile Design(RIT) Fall 2012",
+		"blurb":"",
+		"body":""
+	},
+	{
+		"age":"4",
+		"id":"fin-native",
+		"imageUrl":"",
+		"smallImg":"",
+		"name":"Fin, Native Application Development(RIT) Winter 2012",
+		"blurb":"",
+		"body":""
+	},
+	{
+		"age":"5",
+		"id":"roc-brewing-android",
+		"imageUrl":"images/rbc_main.png",
+		"smallImg":"images/rbc_icon.png",
+		"name":"Roc Brewing Co., Android Application (relased June 8, 2013)",
+		"blurb":"Native Android App for Roc Brewing Co.",
+		"body":["Native code application for Android devices 2.2+",
+		"Written in Java using the Android SDK",
+		"Up to date information on the brewery, beers, and events.",
+		"About <a href='http://rocbrewingco.com' target='_blank'>Roc Brewing Co</a>",
+		"Download the app from the <a href='https://play.google.com/store/apps/details?id=com.rocbrewingco.beta' target='_blank'>Google Play&trade; Store</a"]
+	}
+]

@@ -1,0 +1,193 @@
+
+#highlight{
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/tweed.png);
+}
+
+#highlightContainer{
+	width: 800px;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+#hightlightImg{
+	width: 30%;
+	padding-top: 30px;
+	color: #fff;
+	float: left;
+}
+
+#hightlightImg img{
+	width: 100%;
+}
+
+#highlightText{
+	width: 65%;
+	color: #fff;
+	float: right;	
+	padding-top: 80px
+}
+
+#highlightTitle{
+	font-size: 200%;
+}
+
+#playStoreBadge{
+	width: 129px;
+	margin-left: 140px;
+	margin-right: auto;
+	padding-top: 60px;
+}
+
+#portfolio{ 
+	font-family: "Helvetica";
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.explanation{
+	float:left;
+	font-family: "CallunaSansRegular";
+	display: inline;
+}
+
+#horoscope{
+	margin: 2% 0% 0% 0%;
+}
+
+#horoscope .explanation{
+	width: 43%;
+	font-size: 150%;
+	font-weight: 100;
+	margin: 10% 0% 15% 0%;
+	float: left;
+
+}
+
+#horoscope .explanation p{
+	margin-bottom: 5%;
+}
+
+/*.explanation img{ width: 35%; align: left;}*/
+
+.scopeImg{
+	width:45%;
+	margin-right: 5%;
+	float:left;
+}
+
+.scopeImg2{
+	width:45%;
+	/*margin-left: 2%;*/
+	float:right;
+	padding-bottom: 40px;
+}
+
+.portfolioTitle{
+	font-family: "Helvetica";
+	font-size: 175%;
+	font-weight: 100;
+	float: left;
+	width: 100%;
+	margin: 1% 0% 1% 0%;
+}
+
+#netflix{
+	margin: 2% auto 0% auto;
+	float: left;
+}
+
+#netflix .explanation{
+	width: 31%;
+	font-size: 150%;
+	margin: 5% 1% 5% 1%;
+}
+
+#netflix .explanation p{
+	margin-bottom: 5%;
+}
+
+.netflixImg{
+	width: 33%;
+	float: left;
+}
+.netflixImg2{
+	width: 67%;
+	margin: 5% auto 1% auto;
+	float: left;
+}
+
+#deviantLink{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-family: "helvetica";
+	font-size: 125%;
+	margin-bottom: 20px;
+}
+
+#grupr{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+#grupr .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+#grupr .explanation p{
+	margin-top: 10%;
+}
+
+.gruprImg{
+	width: 35%;
+	float:left;
+}
+
+/*Fin*/
+#fin{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+#fin .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+#fin .explanation p{
+	margin-top: 10%;
+}
+
+.finImg{
+	width: 35%;
+	float:left;
+}
+
+/*Roc Brewing Co*/
+
+#rbc{
+	margin: 2% auto 0% 0%;
+	float: left;
+}
+
+#rbc .explanation{
+	width: 60%;
+	font-size: 150%;
+	margin-left: 5%;
+}
+
+#rbc .explanation p{
+	margin-top: 10%;
+}
+
+.rbcImg{
+	width: 35%;
+	float:left;
+}
