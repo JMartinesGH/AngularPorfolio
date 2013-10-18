@@ -7,7 +7,6 @@
 	<script type="text/javascript" src="js/controllers.js"></script>
 </head>
 <body ng-controller="workCtrl">
-	<p ng-bind="hello"></p>
 	<div id="portfolio">	
 		<div ng-repeat="work in works | orderBy:orderProp">
 			<h2 class="portfolioTitle">{{work.name}}</h2>
