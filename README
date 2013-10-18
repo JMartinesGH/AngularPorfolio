@@ -1,0 +1,10 @@
+AngularPorfolio
+===============
+
+Simple portfolio page using Angular.js
+
+I'm just looking to give my portfolio a more app-like feel.
+
+My data content will be stored in work.json
+
+I plan to incorporate multiple views and simple, human readable routing
