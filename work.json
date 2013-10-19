@@ -51,7 +51,7 @@
 		"id":"roc-brewing-android",
 		"imageUrl":"images/rbc_main.png",
 		"smallImg":"images/rbc_icon.png",
-		"name":"Roc Brewing Co., Android Application (relased June 8, 2013)",
+		"name":"Roc Brewing Co., Android Application (released June 8, 2013)",
 		"blurb":"Native Android App for Roc Brewing Co.",
 		"body":["Native code application for Android devices 2.2+",
 		"Written in Java using the Android SDK",
