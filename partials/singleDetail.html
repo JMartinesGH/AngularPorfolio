@@ -1,0 +1,13 @@
+<p id="viewAll"><a href="#/">View All</a></p>
+<div id="portfolio">	
+	<div ng-repeat="work in works | filter:filterId">
+		<h2 class="portfolioTitle">{{work.name}}</h2>
+		
+		<div class="portfolioBody" >
+			<div class="portfolioImg"><img src="{{work.imageUrl}}" width="100%"></div>
+			<div class="explanation">
+				<p ng-repeat="para in work.body" ng-bind-html-unsafe="para"></p>
+			</div>
+		</div>
+	</div>
+</div>
