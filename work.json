@@ -56,7 +56,7 @@
 		"body":["Native code application for Android devices 2.2+",
 		"Written in Java using the Android SDK",
 		"Up to date information on the brewery, beers, and events.",
-		"About <a href='http://rocbrewingco.com' target='_blank'>Roc Brewing Co</a>",
-		"Download the app from the <a href='https://play.google.com/store/apps/details?id=com.rocbrewingco.beta' target='_blank'>Google Play&trade; Store</a"]
+		"Download the app from the <a href='https://play.google.com/store/apps/details?id=com.rocbrewingco.beta' target='_blank'>Google Play&trade; Store</a",
+		"About <a href='http://rocbrewingco.com' target='_blank'>Roc Brewing Co</a>"]
 	}
 ]
