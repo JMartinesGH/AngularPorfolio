@@ -10,6 +10,5 @@ My data content will be stored in work.json
 I plan to incorporate multiple views and simple, human readable routing
 
 TODO:
-responsive CSS
-switch to ng-view
-create partials(for ng-view)
+Add simple list view
+add more information to single views(e.g. more images)
