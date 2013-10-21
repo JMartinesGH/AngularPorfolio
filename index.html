@@ -1,23 +1,14 @@
-<html ng-app>
+<!doctype html>
+<html ng-app="portfolio">
 <head>
 	<meta charset="utf-8">
 	<title>Angular Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	<script type="text/javascript" src="js/angular/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
 </head>
-<body ng-controller="workCtrl">
-	<div id="portfolio">	
-		<div ng-repeat="work in works | orderBy:orderProp">
-			<h2 class="portfolioTitle">{{work.name}}</h2>
-			
-			<div class="portfolioBody" >
-				<div class="portfolioImg"><img src="{{work.imageUrl}}" width="100%"></div>
-				<div class="explanation">
-					<p ng-repeat="para in work.body" ng-bind-html-unsafe="para"></p>
-				</div>
-			</div>
-		</div>
-	</div>		
+<body>
+	<div ng-view></div>		
 </body>
 </html>
